@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/order1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="140dp"
+            android:text="Order #12"
+            android:textColor="#55021E"
+            android:fontFamily="@font/baloo_tamma"
+            android:textStyle="bold"
+            android:textSize="30dp"
+
+            />
+
+        <TextView
+            android:id="@+id/orderTextView"
+            android:textColor="#55021E"
+            android:layout_below="@id/order1"
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Send e-mail"
+            android:onClick="submitOrder"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderTextView"/>
+    </RelativeLayout>
+</LinearLayout>

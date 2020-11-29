@@ -6,6 +6,7 @@
     android:layout_margin="8dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFAFA"
     tools:context=".MainActivity">
 
     <EditText
@@ -146,6 +147,7 @@
 
     <Button
         android:text="Add to cart"
+        android:onClick="addToCart"
         android:layout_marginTop="50dp"
         android:textColor="@android:color/white"
         android:layout_width="match_parent"
